@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(TinyColor
-    VERSION 1.0.0
+    VERSION 2.0.0
     DESCRIPTION "A tiny header-only library for terminal coloring"
     LANGUAGES CXX
 )
@@ -14,7 +14,7 @@ target_include_directories(TinyColor
         $<INSTALL_INTERFACE:include>
 )
 
-target_compile_features(TinyColor INTERFACE cxx_std_11)
+target_compile_features(TinyColor INTERFACE cxx_std_20)
 
 include(GNUInstallDirs)
 
